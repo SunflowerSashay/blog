@@ -6,15 +6,12 @@ tags:
     - Mac
     - sudo
     - 管理员权限
-    - Keychain
     - 命令行
-    - 系统管理
-    - 安全性
     - 工具
     - 效率
 ---
 
-在使用 Mac 时，可能会遇到需要执行管理员权限操作的情况。这时，频繁地输入 `sudo` 密码可能变得繁琐且不便。别担心！本文将为您揭示一些简单的方法，让您告别频繁输入 `sudo` 的困扰。
+在使用 Mac 时，可能会遇到需要执行管理员权限操作的情况。这时，频繁地输入 sudo 密码可能变得繁琐且不便。别担心！本文将为您揭示一些简单的方法，让您告别频繁输入 sudo 的困扰。
 
 注：请注意，在修改系统设置或执行敏感操作时，请始终保持谨慎，并确保只对您信任的文件和命令进行相应的配置。
 
@@ -49,10 +46,10 @@ Defaults        env_keep += "SUDO_ASKPASS"
 Defaults:USER   env_keep += "SUDO_ASKPASS"
 ```
 
-然后，执行以下命令将 `sudo` 密码添加到 `Keychain`：
+然后，执行以下命令将 sudo 密码添加到 Keychain：
 
 ```bash
 $ sudo sh -c 'echo "MyPassword" | sudo -S -v'
 ```
 
-请将 "MyPassword" 替换为您自己的 `sudo` 密码。
+请将 "MyPassword" 替换为您自己的 sudo 密码。
