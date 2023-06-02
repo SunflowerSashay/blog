@@ -106,7 +106,3 @@ deploy:
     type: git
     repo: git@github.com:erxiaoqi/erxiaoqi.github.io.git
     branch: master
-
-server:
-    port: 4000 # 设置服务器端口号，可以根据需要修改
-    log: false # 设置是否显示请求日志，根据需要修改
